@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ Route::get('/', function () {
 
 Route::get('/payment', [PaymentController::class, 'index']);
 
+Route::post('/payment/validate', [PaymentController::class, 'validatePayment'])->name('payment.validate');
