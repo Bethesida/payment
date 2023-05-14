@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <h1 class="mt-5">Payment Form</h1>
+        <h1 class="mt-5">Payment Form </h1>
         <form action="{{ route('payment.validate') }}" method="POST">
             @csrf
             <div class="form-group">
